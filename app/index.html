@@ -22,4 +22,20 @@
 
     {{content-for "body-footer"}}
   </body>
+
+
+  <script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyBp_cj-ciKBH0D5_75pN0IiztuCUJ7fzvI",
+      authDomain: "task-app-ef967.firebaseapp.com",
+      databaseURL: "https://task-app-ef967.firebaseio.com",
+      projectId: "task-app-ef967",
+      storageBucket: "task-app-ef967.appspot.com",
+      messagingSenderId: "1009887081183"
+    };
+    firebase.initializeApp(config);
+  </script>
+
 </html>

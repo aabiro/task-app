@@ -5,6 +5,7 @@ module.exports = function(environment) {
   let ENV = {
     modulePrefix: 'task-app',
     environment,
+    contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
     rootURL: '/',
     locationType: 'auto',
     EmberENV: {
@@ -17,6 +18,13 @@ module.exports = function(environment) {
         Date: false
       }
     },
+
+    firebase: {
+  apiKey: 'AIzaSyBp_cj-ciKBH0D5_75pN0IiztuCUJ7fzvI',
+  authDomain: 'task-app-ef967.firebaseapp.com',
+  databaseURL: 'https://task-app-ef967.firebaseio.com',
+  storageBucket: 'task-app-ef967.appspot.com'
+},
 
     APP: {
       // Here you can pass flags/options to your application instance
